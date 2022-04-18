@@ -1,0 +1,143 @@
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin: 0;
+  padding: 0;
+  background-color: #1888c7;
+}
+::-webkit-scrollbar {
+  width: 0px;
+}
+/* Main Page CSS */
+.App {
+  color: aliceblue;
+  background-color: #1888c7;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  padding-bottom: 5rem;
+  padding-inline: 8%;
+}
+/* navbar CSS */
+.navbar {
+  padding-block: 2rem;
+  position: fixed;
+  background-color: #1888c7;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+.input_container {
+  position: relative;
+  height: 3rem;
+  width: 50vw;
+}
+.input_field {
+  width: 100%;
+  height: 100%;
+  outline: none;
+  padding-left: 1rem;
+  background-color: #1888c7;
+  border: 1px white solid;
+  border-radius: 10px;
+  font-weight: bolder;
+  font-size: large;
+  color: antiquewhite;
+}
+.input_container button {
+  position: absolute;
+  background-color: transparent;
+  border: none;
+  font-weight: bolder;
+  font-size: large;
+  color: antiquewhite;
+  cursor: pointer;
+  top: 17px;
+  right: 0px;
+}
+/* main_section CSS */
+.main_div {
+  margin-top: 9rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+/* all cards   CSS */
+.card_compenet {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  padding: 1rem;
+  align-content: center;
+}
+/* single Card CSS*/
+.card_item {
+  width: 220px;
+  background-color: aliceblue;
+  border-radius: 5%;
+  display: flex;
+  flex-direction: column;
+}
+
+.card_title {
+  font-size: large;
+  font-weight: bolder;
+  color: #1888c7;
+  padding: 0.7rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: calc(100% - 250px);
+}
+
+.img_section {
+  height: 250px;
+}
+.img_section img {
+  border-radius: 5% 5% 0 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.btn_load {
+  font-size: 1rem;
+  font-weight: 600;
+  color: aliceblue;
+  cursor: pointer;
+}
+a {
+  text-decoration: none;
+}
+.request {
+  font-size: 1rem;
+
+  color: aliceblue;
+}
+.request span {
+  opacity: 0.5;
+  cursor: pointer;
+}
+.request a {
+  color: aliceblue;
+}
+@media screen and (max-width: 600px) {
+  .App {
+    padding-inline: 2%;
+  }
+  .input_container {
+    width: 80vw;
+  }
+  .request {
+    font-size: 0.8rem;
+    width: 80vw;
+  }
+}
